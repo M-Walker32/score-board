@@ -38,25 +38,41 @@
 </head>
 
 <body>
+  <header>
+    <div class="row m-4">
+      <!-- <div class="col-4 d-flex">
+        <form>
+          <input type="teamName">
+          <button id="addTeam" onclick=addTeam()>Add a Team</button>
+        </form>
+      </div> -->
+      <div class="col-2">
+        <button id="reset" onclick=resetScore()>Reset Scores</button>
+      </div>
+    </div>
+  </header>
+
   <main>
     <div class="container-fluid">
       <div class="row d-flex">
         <div class="column-12 d-flex p-4">
-          <div class="p-4">
-            <h1>Team 1</h1>
+          <div class="team"></div>
+          <div class="p-4 team-card m-2">
+            <h1>Team: 1</h1>
             <h2>Score:<span id="score1"></span></h2>
-            <button id="team1" onclick=team1()>Team 1</button>
+            <button onclick=pointTeam1()>One Point</button>
+            <button onclick=threePointTeam1()>Three Points</button>
+            <button onclick=fivePointTeam1()>Five Points</button>
+            <button onclick=minusPointTeam1()>Minus 1 Point</button>
           </div>
-          <div class="p-4">
-            <h1>Team 2</h1>
+          <div class="p-4 team-card m-2">
+            <h1>Team: 2</h1>
             <h2>Score:<span id="score2"></span></h2>
-            <button id="team2" onclick=team2()>Team 2</button>
+            <button id="pointTeam2" onclick=pointTeam2()>One Point</button>
+            <button id="threePointTeam2" onclick=threePointTeam2()>Three Points</button>
+            <button id="fivePointTeam2" onclick=fivePointTeam2()>Five Points</button>
+            <button onclick=minusPointTeam2()>Minus 1 Point</button>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-2 offset-1">
-          <button id="reset" onclick=resetScore()>Reset Scores</button>
         </div>
       </div>
     </div>

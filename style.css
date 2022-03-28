@@ -1,0 +1,14 @@
+button{
+  background-color: #0a7474;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px!important;
+}
+
+.team-card{
+  background-color:wheat;
+  border-radius: 5px;
+}
